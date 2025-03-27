@@ -1,0 +1,18 @@
+h1,head,img,title,br,meta,html,body,h1~h6,p,style,herf,src,!,tab,kbd,i,ctrl+/,link,a
+b,em, strong,
+mark
+small
+sub
+sup
+del
+q
+blockquote
+abbr
+cite
+address
+code
+samp
+var
+&nbsp;
+&1t;
+&gt;
