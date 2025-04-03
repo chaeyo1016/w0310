@@ -1,0 +1,21 @@
+<!doctype html>     문서 타입을 HTML5로 작성한다.
+<html></html>       HTML 문서의 시작과 종료
+<head></head>       head의 시작과 종료
+<body></body>       body의 시작과 종료
+<meta>              문서 정보
+<title></title>     웹 브라우저 제목표시줄에 표시할 제목
+<hn></hn>           콘텐츠 제목, n은 1~6(자연수)
+<p></p>             단락
+<br>                줄바꿈
+<img>               이미지 연결
+<a></a>             링크
+<span></span>       인라인 요소 그룹핑
+<i></i>             이텔릭체
+<b></b>             굵게
+&nbsp;              공백 1개
+&lt;                <
+&gt;                >
+&copy;              ⓒ
+
+
+
