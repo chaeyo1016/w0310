@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+/*  선택자의 종류
+1.기본(simple) 선택자
+2.결합자 (combinator) 선택자
+3.의사클래스(슈도, 유사,pseudo-class 선택자
+4.의사요소(슈도, 유사,pseudo-elements) 선택자
+5.속성(Attribute) 선택자 */
+
+/* 
+1.기본 선택자
+2.elment(type, tag) - 태그 이름을 로 사용! */
+3. class  - .이름, 여러번
+4. id  - # 이름,한번만
+5. 그룹  - ,(콤마)
+6. 전체  - *(별표)
+
+p {color:  red;
+}
+/*  id와 class의 이름 규칙
+1. 첫 글자는 숫자 x
+2. 주로 영문자 
+3. 특수문자는 _와 -사용 가능*/
+p {color: red;}
+#ctxt {color: blue;}
+#first1 {color: red;}
+#first2 {color: blue;}
+
+    </style>
+</head>
+<body>
+    <h1>선택자</h1>
+    <h2>요소(타입, 태그) 선택자</h2>
+    <!-- id의 값이 유일해야 한다. -->
+    <p id= "first1"> 요소 선택자란 HTML태그명을 선택자로 사용한다</p>
+    <p id= "first2"> 요소선택자란 HTML태그명을 선택자로 사용한다</p>
+
+    <p id= "ctxt"> 요소선택자란 HTML태그명을 선택자로 사용한다</p>
+    <p id= "txt"> 요소선택자란 HTML태그명을 선택자로 사용한다</p>
+    
+
+    
+</body>
+</html>
