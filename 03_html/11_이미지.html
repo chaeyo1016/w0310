@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <h1>이미지</h1>
+    <!-- 
+        이미지 자료 수집
+            - 언스플래쉬: https://unsplash.com/ko -> 사진(jpg)
+            - Pngwing: https://www.pngwing.com/ko -> 로고, 아이콘
+    -->
+    <!-- 
+        img는 종료 태그가 없다.
+
+        이미지는 src와 alt 속성을 반드시 써야한다.
+        <img src="이미지경로지정" alt="대체텍스트">
+
+        alt 속성: 이미지를 설명하는 대체 텍스트를 기록하며, 웹 접근성을 위해 반드시 기록한다.
+
+        웹 접근성이란? 장애인이나 고령자분들이 웹 사이트에서 제공하는 정보를 비장애인과 동등하게 접근하고 이용 할 수 있도록 보장하는 것
+
+        이미지 경로 설정
+            ./ -> .은 현재 위치
+            ../ -> ..은 부모 디렉토리(폴더)로 한 단계 이동
+                ../ 한 단계 이동
+                ../../ 두 단계 이동
+                ../../../ 세 단계 이동
+    -->
+    <!-- 
+        <img src="./../70_pf/just/gallery1.jpg">
+        -> alt 속성을 사용하지 않았기 때문에 비표준이다.
+    -->
+    <img src="./../70_pf/just/gallery1.jpg" alt="겔러리1">
+    <img src="./../70_pf/just/gallery1.jpg" alt>
+</body>
+</html>

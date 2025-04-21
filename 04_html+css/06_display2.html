@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,41 +30,46 @@
              4. none: 없음
         */
 
-        body {margin: 0;}
-        div {
-            width: 200px; /* w200 */
-            height: 30px; /* h30 */
-            border: 1px solid #000; /* bd */
-            padding: 10px; /* p10 */
-            /* 위아래 여백의 경우 겹치면 큰 쪽으로 지정된다. */
-            margin: 20px; /* m20 */
-            background: lightpink;
-        }
-        
+        div,
         span {
-            /* width와 height가 지정되지 않는다. */
-            /* width: 200px;
-            height: 30px; */
             border: 1px solid #000;
-            /* 요소가 겹칠 수 있다. */
-            padding: 10px;
-            /* 위아래는 적용되지 않는다. */
-            margin: 20px;
-            background: lightgreen;
         }
+
+        .div1 {
+            display: block;
+            width: 200px;
+        }
+
+        .div2 {
+            display: inline;
+            /* width: 200px; -> 적용x */
+        }
+
+        .div3 {
+            display: inline-block;
+            width: 200px;
+        }
+
+        .div4 {
+            display: none;
+        }
+
+        .span1 {display: block;}
+        .span2 {display: inline;}
+        .span3 {display: inline-block;}
+        .span4 {display: none;}
     </style>
 </head>
+
 <body>
-    <!-- 
-        요소(Element)
-            1. 블록 레벨 요소: div, ...
-            2. 인라인 요소: span, ...
-    -->
-    <!-- div는 display:block; -->
-    <div>div박스</div>
-    <div>div박스</div>
-    <!-- span는 display:inline; -->
-    <span>span박스</span>
-    <span>span박스</span>
+    <div class="div1">div1박스</div>
+    <div class="div2">div2박스</div>
+    <div class="div3">div3박스</div>       
+    <div class="div4">div4박스</div>
+    <span class="span1">span1박스</span>
+    <span class="span2">span2박스</span>
+    <span class="span3">span3박스</span>
+    <span class="span4">span4박스</span>
 </body>
+
 </html>

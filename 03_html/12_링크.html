@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <h1>링크(link, 연결)</h1>
+    <!-- 
+        anchor(앵커, 닻)
+        <a href="링크" target="타깃">콘텐츠(텍스트, 이미지, 비디오)</a>
+
+        href는 필수 속성
+            URL -> http://~, https://~
+            파일 -> 경로/파일명(./, ../)
+            메일 -> mailto:~
+            전화번호 -> tel:~
+
+        프로토콜(Protocal, 통신규약)
+            컴퓨터나 전자 기기 간의 통신 방식을 정의하는 규칙 체계를 말합니다. 
+            http, https, mailto, tel, FTP, SMTP, POP3, IMAP...
+
+        target는 선택 속성
+            _self -> 기본값으로 현재창으로 열린다.
+            _blank -> 새 창으로 열린다.
+            _top -> 최상위(루트 root) 페이지로 열린다.
+            _parent -> 부모 페이지로 열린다.
+
+        href(hyper reference)
+            하이퍼 참조는 하이퍼텍스트 문서에서 한 문서에서 다른 문서로 연결하는 참조를 의미합니다. 하이퍼링크(hyperlink)라고도 불리며, 웹페이지에서 클릭 가능한 텍스트를 통해 다른 페이지나 문서를 연결할 수 있는 기능입니다. 
+    -->
+    <!-- 네이버는 현재 창으로 뜬다. -> 타깃 사이트 -->
+    <a href="https://www.naver.com">naver</a>
+    <!-- 구글은 새창으로 뜬다. -> 타 사이트 -->
+    <a href="https://google.com" target="_blank">구글</a>
+
+    <!-- 이메일 -->
+    <a href="mailto:hong@naver.com">이메일</a>
+    <!-- 전화번호 -->
+    <a href="tel:010-1234-5678">010-1234-5678</a>
+    <!-- 파일 -->
+    <a href="./11_이미지.html">페이지</a>
+    <a href="./../70_pf/just/gallery1.jpg">갤러리 이미지</a>
+    <a href="./../70_pf/starbucks/swot.pdf">pdf 파일</a>
+
+    <h2>이미지에 링크 걸기</h2>
+    <a href="https://naver.com">
+        <img src="./naver.png" alt="네이버 로고">
+    </a>
+</body>
+</html>

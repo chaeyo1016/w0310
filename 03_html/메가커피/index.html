@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메가MGC커피</title>
 </head>
-
 <body>
     <!-- 
         이미지 자료수집
@@ -14,75 +13,115 @@
     <!-- ctrl+/ -->
     <!-- https://www.mega-mgccoffee.com/#main -->
     <!-- wrap: alt+w -->
-     <!-- 메인페이지의 파일명은 index.html 정해져 있다. -->
 
-    <!-- 로고 작성 방법 -->
-    <h1><a href="index.html"><img src="./logo.png" alt="메가커피로고"></a></h1>
-<!-- 정보구조설계: 예> 내비게이션 -->
- <!-- #은 임시링크, 현재 페이지의 최상단 -->
- <ul>
-    <li><a href="#">메가스토리</a></li>
-    <ul>
-        <li><a href="#">브랜드</a></li>
-        <li><a href="#">BI</a></li>
-        <li><a href="#">오시는 길</a></li>
-    </ul>
-    <li><a href="#">메뉴소개</a>
-    <ul>
-        <li><a href="drink.html">음료</a></li>
-        <li><a href="#">푸드</a></li>
-        <li><a href="#">상품</a></li>
-    </ul>
-    <li><a href="#">매장</a></li> 
-    <ul>
-        <li><a href="#">매장찾기</a></li>
-    </ul>
-</li>
-<li>
-    </li>
-<header>
- <section>
-    <h2>메가 MGC커피 봄시즌 신메뉴</h2>
-    <h3>지친 일상 속, 언제 어디서나<br>
-    <span style="background:#ffo:">MEGA 에너지 충전</span></h3>
-    <p><b>MEGA LEVEL UP, YOUR ENERGY !</b></p>
-    <p>에너지 업! 시원하고 달달한 음료들부터<br>
-    언제 어디서나 메가MGC커피에서 충전하세요.</p>
-    <a href="drink.ht.l"></a>
+    <!-- 메인페이지의 파일명은 index.html로 정해져있다. -->
+
+    <header>
+        <!-- 사이트제목? 메가MGC커피 -> 로고는 사이트의 제목으로 본다. -->
+        <!-- 로고 이미지를 클릭하면 index.html로 이동 -->
+        <h1><a href="index.html"><img src="./logo.png" alt="메가커피로고"></a></h1>
+        <!-- 정보구조설계: 예> 내비게이션 -->
+        <!-- #은 임시링크, 현재 페이지의 최상단 -->
+        <ul>
+            <!-- shift+alt+아래방향키 -->
+            <li>
+                <!-- 메인메뉴: 1depth(뎁스, 깊이) -->
+                <a href="#">메가스토리</a>
+                <!-- 서브메뉴: 2depth -->
+                <ul>
+                    <li><a href="#">브랜드</a></li>
+                    <li><a href="#">BI</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">메뉴소개</a>
+                <ul>
+                    <li><a href="drink.html">음료</a></li>
+                    <li><a href="#">푸드</a></li>
+                    <li><a href="#">상품</a></li>
+                </ul>
+            </li>
+            <li><a href="#">매장</a>
+                <ul>
+                    <li><a href="#">매장찾기</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- section 태그 안에는 하나 이상의 제목(h1~h6)이 있어야 한다. -->
+    <!-- 첫 번째 섹션 -->
+    <section>
+        <h2>슬라이드 이미지: 캐로셀(Carousel)</h2>
+    </section>
+
+    <!-- 두 번째 섹션 -->
+    <section>
+        <h2>메가MGC커피 봄시즌 신메뉴</h2>
+        <h3>지친 일상 속, 언제 어디서나<br>
+            <span style="background:#ff0;">MEGA 에너지 충전!</span></h3>
+        <p><b>MEGA LEVEL UP, YOUR ENERGY !</b></p>
+        <p>에너지 업! 시원하고 달달한 음료들부터<br>
+            기분 업! 취향껏 즐길 수 있는 다양한 디저트까지<br>
+            언제 어디서나 메가MGC커피에서 충전하세요.</p>
+        <a href="drink.html">메뉴 더보기</a>
+    </section>
+
+    <!-- 세 번째 섹션 -->
+    <section>
+        <h2>거품 없는 창업비용</h2>
+        <h3>FRANCHISE<br>
+            MEGA MGC<br>
+            <span style="background:#ff0;">COFFEE</span></h3>
+        <!-- 인라인 요소? span, br, b -->
+        <!-- span: 인라인 요소 그룹핑 -->
+        <p>6,935 <span>만원(10평 기준)</span></p>
+        <p><b>지금, 메가MGC커피에서<br>
+            창업성공 스토리를 경험해보세요.</b></p>
+        <p>합리적인 창업비용과 다양한 경험을 바탕으로,<br>
+            다양한 노하우를 전수하여 창업 성공을 약속드립니다.</p>
     </section>
     <section>
-        <h2>메가 MGC커피 봄시즌 신메뉴</h2>
-    <h3>지친 일상 속, 언제 어디서나<br>
-    <span style="background:#ffo:">MEGA 에너지 충전</span></h3>
-    <p><b>MEGA LEVEL UP, YOUR ENERGY !</b></p>
-    <p>에너지 업! 시원하고 달달한 음료들부터<br>
-    언제 어디서나 메가MGC커피에서 충전하세요.</p>
-        
-
+        <h2>섹션4</h2>
+    </section>
     <section>
-       < h2>거품 없는 창업 비용</h2>
-    <h3>FRANCHIXE<br>
-        MEGA MGC<br>
-    <span style="background:#ffo:">MEGA 에너지 충전</span></h3>
-    <p>6,935<span>만원(10평 기준)</span></p>
-    <p>지금, 메가 MGC커피에서 <br>
-        창업성공 스토리글 경험해보세요.<br></p>
-    <p>합리적인 창업비용가 다양한 경험을 바탕으로, <br>
-    다양한 노하우를 전수하여 창업 성공을 약속드립니다.</p>
+        <h2>섹션5</h2>
+    </section>
 
-    
-</section>     
-            
-              
-</header>    
-        
+    <footer>
+        <!-- 하단 로고(흑백화, 심볼만), 주소, 하단메뉴, 저작권, SNS, 패밀리사이트, 탑버튼, 사이트맵, ... -->
+        <p>서울특별시 강남구 강남대로 518 11층, 13층</p>
+        <p>&copy; 2025 (주)앤하우스. All Rights Reserved.</p>
+    </footer>
 
+    <!-- 
+        HTML ver4.01
+        콘텐츠(영역) 구분하는 태그
+        <div> - 의미없는 태그
+        ---------------------------
+        HTML ver5
+        시맨틱 태그
+        <header> - 로고, 내비게이션, SNS
+        <section>, <aritcle>, <main>, <aside>
+        <footer> - 주소, 저작권, SNS
+        <address>
+    -->
 
- 
+    <!-- 
+        폰트
+            serif - Time
+            san-serif - Arial
+            monospace - d2coding, Consolas, 'Courier New'
 
+        l 1
+        o 아 0
+        코딩용 글꼴: d2coding, Consolas, 'Courier New', monospace
+        -> 모노스페이스 폰트
+        abcdefgmno
+        ABCDEFGMNO -> 반각문자(1byte)
+        0123456789 -> 반각문자
+        ㄱㄴㄷㄹㅁㅂ -> 전각문자(2byte)
+     -->
 
-  
-
-    
 </body>
 </html>
