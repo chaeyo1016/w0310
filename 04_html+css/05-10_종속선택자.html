@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 부모 자식 관계 선택자 
+        1.선택자 선택자->하위(descendant)선택자
+        2.선택자>선택자->자식(child)선택자
+
+        형제 관계선택자
+        3.선택자~선택자-> 형제(sibling)선텍자
+        4.선택자+선택자->인접형제(adjacent sibling)선텍자 */
+        종속 선택자
+        /* #atxt 아이디 선택자*/
+        #atxt{color: red;}
+        /* p#atxt는 종속 선택자-> type과 id를 결합*/
+        p#atxt{color: red}
+        /* p.atxt는 종속 선택자-> type과 class를 결합 */
+        p.atxt{color: green;}
+        /* #atxt.atxt는 종속 선택자 */
+            </style>
+</head>
+<body>
+    <p id="atxt">선택자의 다양한 표현</p>
+</body>
+</html>
