@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+       P{
+        margin: 20px;
+        border: 1px solid red;
+        height: 50px;
+        txet-aligh: center;
+        /* tac */
+        /* text-align은 블록레벨요소에 지정해야 하며, 블록레벨요소의
+        자식이 인라인 요소 또는 텍스트일경우 적용된다.(주의! 자손이 블록레벨요소이면
+        적용안된다.)
+         */
+       }
+       span{
+        /* span은 인라인 요소 */
+        display: inline-block;
+        /* dib */
+        width: 50px;
+        height: 20px;
+        background:yellow;
+       }
+    </style>
+</head>
+<body>
+    <h1>가로 맞춤</h1>
+    <p>글자</p>
+    <P><span>나</span></P>
+</body>
+</html>
