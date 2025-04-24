@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /*  
+        ~child
+        :nth-child()
+        :nth-last-child()
+        :first-dhild
+        :last-child
+        
+        ~of-type
+        :ngh-of-type()
+        :nth-last-of-type()
+        :first-of-type
+        :last-child
+        */
+        p:first-letter{font-size: 150%;}
+        p:first-child{color: blue;}
+        p: { background: lightgray;}
+        p:last-child{background:palegoldenrod;}
+        P:nth-child(3) {color: red;}
+        /* 한글의 ㅁ+ 한자키 */
+        p:before{content: "★"}
+        .box:after{
+            content:"항목을 선택해주세요";
+            color: red;
+        }
+    </style>
+    
+
+</head>
+<body>
+<div class="box">
+    <p>div의 첫 번째 자식</p>
+    <p>div의 두 번째 자식</p>
+    <p>div의 세 번째 자식</p>
+    <p>div의 네 번째  자식</p>
+    
+</div>
+</body>
+</html>

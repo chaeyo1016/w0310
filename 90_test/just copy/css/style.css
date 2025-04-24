@@ -1,15 +1,14 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
-
-body, h1,h2,ul,p {
-    margin:0;
+* {
+    margin: 0;
 }
 ul{
-
     padding: 0;
     list-style: none;
 }
+
 body {
     background: #fff;
     color: #222328;
@@ -53,10 +52,8 @@ a {
 
 }
 
-
 .slide {
     height: 300px;
-
 }
 
 
@@ -64,6 +61,7 @@ a {
     display: flex;
     height: 200px;
 }
+
 .notice {
     padding: 24px 0 0 16px;
     width: 400px;
@@ -93,6 +91,7 @@ a {
     background:#505050;
     color: #969090;
 }
+
 .blogo {
     padding: 24px;
     width: 200px;

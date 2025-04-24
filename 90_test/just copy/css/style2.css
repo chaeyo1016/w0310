@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 
-body, h1,h2,ul,p {
+* {
     margin:0;
 }
 ul{
@@ -52,7 +52,6 @@ a {
     font-size: 18px;
 
 }
-
 
 .slide {
     height: 300px;

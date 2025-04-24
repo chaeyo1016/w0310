@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* 전체 */
+* {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    font: 14px "Noto Sans KR"
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 헤더 */
+header {
+    height: 100px;
+    display: flex;
+}
+
+.logo {
+    width: 200px;
+}
+
+.gnb {
+    display: flex;
+    justify-content: flex-end;
+    width: 1000px;
+    padding-right: 20px;
+}
+
+.main {
+    width: 600px;
+    line-height: 125px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+/* 슬라이드 */
+.slide {
+    height: 350px;
+}
+
+/* 콘텐츠 */
+.contents {
+    height: 300px;
+    display: flex;
+    }
+
+.notice {
+    width: 400px;
+    padding: 16px 0 0 16px;
+    line-height: 1.8;
+}
+
+.notice h2 {
+    margin-bottom: 8px;
+}
+
+.notice span {
+    display: inline-block;
+    width: 290px;
+}
+
+.banner {
+    width: 400px;
+}
+
+.shortcut {
+    width: 400px;
+}
+
+
+/* 푸터 */
+footer {
+    display: flex;
+    height: 100px;
+    background: #eee;
+}
+
+.blogo {
+    width: 200px;
+    padding-top: 5px;
+}
+
+.copy {
+    width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sns {
+    width: 200px;
+    text-align: right;
+    padding: 40px;
+}
+
+.sns li {
+    display: inline-block;
+    margin: 2px;
+}
+
+.sns a {
+    color: #111;
+}
