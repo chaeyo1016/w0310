@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            ~child
+            :nth-child()
+            :nth-last-child()
+            :first-child
+            :last-child
+
+            ~of-type
+            :nth-of-type()
+            :nth-last-of-type()
+            :fist-of-type
+            :last-child
+        */
+
+        /* div의 첫 번째 자식 p */
+        /* :first-child와 :nth-child(1) 같다. */
+        p:nth-child(1) {
+            color: magenta;
+        }
+
+        /* body 태그 안의 모든 p */
+        p {
+            background: lightgray;
+        }
+
+        /* div의 마지막 자식 p */
+        /* :last-child와 nth-last-child(1)은 같다. */
+        p:nth-last-child(1) {
+            background: palegoldenrod;
+        }
+
+        /* div의 세 번째 자식 p */
+        /* p:nth-child(3) { */
+        p:nth-last-child(2) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>div의 첫 번째 자식p</p>
+        <p>div의 두 번째 자식p</p>
+        <p>div의 세 번째 자식p</p>
+        <p>div의 네 번째 자식p</p>
+    </div>
+</body>
+
+</html>

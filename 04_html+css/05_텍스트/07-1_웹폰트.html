@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            구글 폰트: https://fonts.google.com/ 
+
+        */
+        /* 외부 폰트 가져오기 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+        /* 
+            제주 한라산체 - 구글 폰트 
+            @import url('글꼴주소');
+            
+            글골: ttf/otf, woff, woff2(Web Open Font Format)
+        */
+        @import url('https://fonts.googleapis.com/earlyaccess/jejuhallasan.css');
+
+        /* 
+            제주 돌담체 
+            @font-face {
+                font-family: 폰트명; 
+                src: url('글꼴주소');
+            }
+            -> 폰트명은 임의 이름으로 지정한다.
+        */
+        @font-face {
+            font-family: 'EF_jejudoldam';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2');
+        }
+
+        /* 현재 문서에 폰트 적용하기 */
+        p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .p1 {
+            font-family: 'Jeju Hallasan';
+        }
+
+        .p2 {
+            font-family: 'EF_jejudoldam';
+        }
+    </style>
+</head>
+
+<body>
+    <h1>웹 폰트</h1>
+    <p class="p1">구글 폰트로 지정했다. 웹폰트는 컴퓨터에 기본적으로 설치되어 있지 않은 글꼴도 인터넷을 통해 웹브라우저에서 보여주는 기술을 의미합니다.(Web fonts are a technology
+        that allows web browsers to display fonts that are not installed on the computer by default.)</p>
+    <p class="p2">눈누 폰트로 지정한다. 웹폰트는 컴퓨터에 기본적으로 설치되어 있지 않은 글꼴도 인터넷을 통해 웹브라우저에서 보여주는 기술을 의미합니다.(Web fonts are a technology
+        that allows web browsers to display fonts that are not installed on the computer by default.)</p>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            ~child -> 타입을 구별하지 않는다.
+            :nth-child(n)
+            :nth-last-child(n)
+            :first-child
+            :last-child
+
+            ~of-type -> 타입을 구별하여 선택한다.
+            :nth-of-type(n)
+            :nth-last-of-type(n)
+            :fist-of-type
+            :last-child
+        */
+
+        div>p:nth-child(1) {color:red;}
+        /* :first-of-type은 :nth-of-type(1)과 같다 */
+        div>p:nth-of-type(1) {background-color:yellow;}
+        
+        .box2 p:first-of-type {border:2px solid red;}
+        /* :last-of-type은 :nth-last-of-type(1)과 같다 */
+        .box2 p:last-of-type {border: 2px dotted blue;}
+        /* 
+            n은 숫자, 수열(2n, 2n+1, 3n+2,...), odd(홀수), even(짝수)
+        */
+        .box2 p:nth-of-type(3) {border: 2px dashed green;}
+
+        /* 2n -> 2 × n, n은 1,2,3,... */
+        .box1 p:nth-of-type(2n) {background: lightgreen;}
+        .box1 p:nth-of-type(odd) {background: rgb(78, 142, 78);}
+    </style>
+</head>
+
+<body>
+    <h1>가상 클래스 선택자</h1>
+    <h2>~child</h2>
+    <div class="box1">
+        <h3>난 h3으로 내가 첫 번째 자식이야!</h3>
+        <p>box1의 첫 번째 자식p</p>
+        <p>box1의 두 번째 자식p</p>
+        <p>box1의 세 번째 자식p</p>
+        <p>box1의 네 번째 자식p</p>
+        <p>box1의 다섯 번째 자식p</p>
+        <p>box1의 여섯 번째 자식p</p>
+        <p>box1의 일곱 번째 자식p</p>
+        <p>box1의 여덟 번째 자식p</p>
+    </div>
+    <h2>~of-type</h2>
+    <div class="box2">
+        <p>box2의 첫 번째 자식p</p>
+        <p>box2의 두 번째 자식p</p>
+        <p>box2의 세 번째 자식p</p>
+        <p>box2의 네 번째 자식p</p>
+    </div>
+</body>
+
+</html>
