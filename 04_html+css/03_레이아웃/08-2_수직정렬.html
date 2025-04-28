@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style type="text/css">
+        p{ border: 1px solid #000;}
+        /* 
+        vertical-align:수직 맞춤
+        기본값: baseline(기준선)
+        값: top(위),bottom(아래),niddle(중간)
+        사용태그: 인라인 요소(<img>, <input>,<selet>,<label>,...
+            테이블 셀(th,td), flexbox, grid */
+            
+        .valign img{vertical-align: middle;}
+
+    </style>
+</head>
+<body>
+    <p>나는 자유다
+    <img src="https://imagescdn.gettyimagesbank.com/500/202406/jv13493412.jpg" width="150" alt="자유">
+    </p>
+    <p class="valign">
+        나는 자유다
+        <img src="https://imagescdn.gettyimagesbank.com/500/202404/jv13438490.jpg" width="150" alt="자유">
+    </p>
+</body>
+</html>
