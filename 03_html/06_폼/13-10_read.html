@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>disabled속성과 readonly속성</legend>
+            <p>
+            <label for="identification">인증번호</label>
+            <input type="text" id="identification" title="인증번호 입력">
+            <input type="button" value="이전">
+            <input type="button" value="다음">disabled>
+            </p>
+            <p>
+                <label for="book"> 선택한 책</label>
+                <!-- readonly는 읽기 전요, 포커스(0) ,테이터 전송(o)-->
+            <input type="text" id="book" value="반응형 웹" readonly><br>
+                       <label for="quantity">수량</label>
+                       <!-- 
+                       min:최소값
+                       max:최대값
+                       step:단계
+                       value:초기값
+                        -->
+            <input type="number" if="quantity" min="1" value="1" title="수량입력">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

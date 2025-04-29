@@ -6,10 +6,64 @@
     <title>Document</title>
     <style>
         /* 
-        white-space: 문자들 사이의 공백 처리 방식 */
-    </style>
+        white-space: 문자들 사이의 공백 처리 방식
+        공백:spacebar, tab enter,...
+        normal
+        -줄바꿈o
+        -spacebar, tab enter모두x
+        nowrap
+        -자동 줄바꿈x
+        - -spacebar, tab enter모두x
+        pre
+        -자동 줄바꿈x
+        - -spacebar, tab enter모두o
+        pre-wrap
+        -자동 줄바꿈o
+         -spacebar, tab enter모두o
+         pre-line
+         -자동 줄바꿈
+         -spacebar(tab)x
+         -enter o
+        
+        
+        */
+        p{
+            width: 400px;
+            border: 1px solid #000;
+
+            /* bd */
+        }
+        p:nth-of-type(1){
+            white-space: normal;
+            /* whs:n */
+        }
+        p:nth-of-type(2){
+            white-space: nowrap;
+        }
+        p:nth-of-type(3){
+            white-space: pre;
+            /* whs:p */
+        }
+        p:nth-of-type(4){
+            white-space: pre-wrap;
+            /* whs:pw */
+        }
+        p:nth-of-type(5){
+            white-space: pre-line;
+            /* whs-pl */
+        }
+                   </style>
 </head>
 <body>
-    
+    <h1>white-space 속성</h1>
+    <p>normal(기본값) 은 연속 공백들과 줄바꿈이 하나의 공백으로 처리된다. 
+        길면 줄바꿈이 일어난다. 
+    </p>
+    <p>nowrap은 연속 공백들과 줄바꿈이 하나의 공백으로 처리된다 길어도 줄바꿈 없이
+        박스 밖으로 나간다.
+    </p>
+    <p>pre는 연속 공백들과 줄바꿈이 소스 그대로 표현된다.</p>
+    <p>pre-wrap은 연속 공백들과 줄바꿈이 소스 그대로 표현되나, 길면 줄바꿈이 일어난다.</p>
+    <p>pre-line은 연속 공백들이 하나의 공백으로 처리된다. 줄바꿈은 소스 그대로 표현되나, 길면 줄바꿈이 일어난다.</p>
 </body>
 </html>
