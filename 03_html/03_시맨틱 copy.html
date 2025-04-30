@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            border: 1px solid gray;
+            width: 1000px;
+            margin: 0 auto;
+           padding: 20px;
+        }
+        #heder{
+          border: 1px solid red;
+          margin-bottom: 20px;
+          padding: 20px; 
+        }
+        #content{
+            border: 1px solid blue;
+            float:  right;
+            width: 700px;
+            height: 500px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        #snb{
+            border: 1px solid green;
+            float: left;
+            width: 200px;
+            padding: 20px;
+        }
+        .clear::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #footer{
+            border: 1px sloid orange;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>header</h1>
+    </header>
+    <aside>        
+        <h2>aside</h2>
+        <nav>
+            <h3>nav</h3>
+        </nav>
+    </aside>
+
+    <main>
+        <h2>main content</h2>
+        <section>
+            <article>콘텐츠a</article>
+        </section>
+        <section>
+            <article>콘텐츠b</article>
+        </section>
+    </main>
+
+    <div class="clear"></div>
+    
+    <footer>
+        <h2>footer</h2>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        /* m0 */
+      }
+      /* 블랙 레벨 요소
+        width: auto;->부모크기의100% */
+      h1,
+      p {
+        border: 1px solid #000;
+        margin: 0;
+      }
+      h1 {
+        /* h1이 다른 요소에 왼쪽에 배치 */
+        /* float는 뜨다 */
+        float: left;
+        /* fl */
+        background: brown;
+        /* 상 우 하 좌 */
+        margin: 5px 10px 5px 16px;
+        /* 상하 좌우 */
+        padding: 3px 10px;
+        font-size: 200%;
+        /* fz200p */
+        /* font-size:2em;기본값 200% */
+        color: #fff;
+      }
+      p{
+        padding: 
+        width: 500px;
+        text-align: justify;
+        /* taj */
+        word-break: break-all;
+    /* 영문의 경우 justify와 break-all을 함께 사용한다 */
+    color: darkgreen;
+
+      }
+      /* bd */
+      p strong{
+        font-size: 1.2em;
+      }
+      span {
+        font-weight: bolder;
+        /* fwbr */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flo<br />at</h1>
+    <p>
+      <strong>강한강조</strong>Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Totam fugit eveniet enim a assumenda officiis laudantium
+      vitae eaque in, quod facilis qui est error vel nam, voluptatibus
+      <span>possimus</span> earum et!
+    </p>
+  </body>
+</html>
