@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=6, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .vid1 {
+            width: 600px;
+        }
+
+        iframe {
+            bottom: none;
+            width: 600px;
+            height: 338px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>비디오</h1>
+
+    <video class="vid1" src="./assets/203923-922675870_tiny.mp4" loop autoplay muted></video>
+    <video controls weigh="600" poster="./assets/비디오poster600_338.jpg(이미지)">
+        <source src="./assets/" type="video/mp4">
+        <source src="./assets/203923-922675870_tiny.webm" type="video/webm">
+        <source src="./assets/203923-922675870_tiny.ogv" type="video/ogg">
+        Your browser does not support the audio element (당신의 브라우저는 오디오 요소를 지원하지 않습니다.)
+    </video>
+
+    <iframe src="https://www.youtube.com/embed/BcbmFxbdsJ0" title="뭐지?"></iframe>
+</body>
+
+</html>
