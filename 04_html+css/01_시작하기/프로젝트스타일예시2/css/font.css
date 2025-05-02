@@ -1,0 +1,7 @@
+@charst "utf-8";
+/* font.css:폰트 정의 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body{
+    font-family: "Noto sans KR", sans-serif;
+}
