@@ -7,14 +7,16 @@
     <title>HTML+CSS</title>
     <style>
         /* 
-            자식 선택자 -> 선택자를 > 으로 구분 
-            선택자 > 선택자
-            부모 > 자식
+            하위 선택자 -> 선택자를 공백으로 구분 
+            선택자1 선택자2
+            조상 자손
+            조상은 부모도 포함된다.
+            자손는 자식도 포함된다.
         */
         /* div 중에서 클래스 이름이 abox 요소의 자손 p를 선택하여 */
         /* div.abox p { */
         /* 클래스 이름이 abox 요소인 자손 p를 선택하여 */
-        .abox > p {
+        .abox p {
             color: #ad2d2d;
         }
     </style>
@@ -22,18 +24,18 @@
 
 <body>
     <div class="abox">
-        <p>p는 div의 첫 번째 자식이다.</p>
-        <p>p는 div의 두 번째 자식이다.</p>
+        <p>div의 첫 번째 자식p, 조상: div,body,html</p>
+        <p>div의 두 번째 자식p</p>
         <ul>
             <li>
-                <p>p는 첫 번째 li의 자식, div의 손자이다.</p>
+                <p>li의 첫 번째 자식p</p>
             </li>
             <li>
-                <p>p는 두 번째 li의 자식, div의 손자이다.</p>
+                <p>li의 두 번째 자식p</p>
             </li>
         </ul>
     </div>
-    <p>p는 body의 자식이다.</p>
+    <p>body의 자식p</p>
 </body>
 
 </html>

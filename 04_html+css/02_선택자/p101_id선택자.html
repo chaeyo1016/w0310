@@ -13,6 +13,13 @@
                 4. 그룹 - ,(콤마)
                 5. 전체 - *(별표)
         */
+        /* 본문(body)의 p태그를 선택하여 글자색을 빨강으로 지정한다. */
+        /*  */
+        p {
+            /* 글자색을 빨강으로 */
+            color: red;
+        }
+
         /* 
             id와 class의 이름 규칙
                 1. 첫 글자는 숫자 x
@@ -20,23 +27,19 @@
                 3. 특수문자는 _와 - 사용 가능
         */
 
-        .atxt {font-weight: bold;}
-        .btxt {color: red;}
-        .ctxt {color: blue;}
+        p {color: red;}
+        #ctxt {color: blue;}
     </style>
 </head>
 <body>
     <h1>선택자</h1>
     <h2>요소(타입, 태그) 선택자</h2>
     <!-- id의 값이 유일해야 한다. -->
-    <!-- class는 같은 값을 여러 번 사용할 수 있다. -->
-    <p class="btxt">Lorem ipsum dolor sit amet.</p>
-    <p class="ctxt">Lorem ipsum dolor sit amet.</p>
-    <!-- 
-        class의 값을 여러 개 쓸 수 있다. 
-        class="값 값 값 ..." (o)
-        id="값 값 값 ..." (x)
-    -->
-    <p class="ctxt atxt">Lorem ipsum dolor sit amet.</p>
+    <p>요소 선택자란 HTML 태그명을 선택자로 사용한다.</p>
+    <p id="ctxt">요소 선택자란 HTML 태그명을 선택자로 사용한다.</p>
+    <p id="txt">요소 선택자란 HTML 태그명을 선택자로 사용한다.</p>
+
+   
+</p> 
 </body>
 </html>
