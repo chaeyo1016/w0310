@@ -95,8 +95,9 @@ nav a {
 .notice {
   width: 670px;
 }
-.notice tr td:nth-child(2) {
-  padding-left: 24px;
+.notice a {
+  display: inline-block;
+  width: 500px;
 }
 
 .gallery {
