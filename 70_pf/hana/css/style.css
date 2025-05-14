@@ -70,17 +70,75 @@ nav a {
 /* 콘텐츠 */
 .contents {
   width: 400px;
+  background: orange;
+}
+/* 배너 */
+.banner {
+  height: 120px;
   background: lightcoral;
 }
+/* 공지사항 */
+.notice {
+  height: calc(100% - 600px);
+}
+/* 갤러리 */
+.gallery {
+  height: 360px;
+  background: lightblue;
+}
+/* 바로가기 링크 */
+.link {
+  height: 120px;
+  background: darkkhaki;
+}
+
+
 /* 슬라이드 */
 .slide {
   width: calc(100% - 600px);
-  background: lightgreen;
+
   /* owerflow hidden:은 콘텐츠가 영역을 벗어나면 숨긴다 */
   overflow: hidden;
 }
+/* 푸터 */
 
 footer {
+  display:flex;
+  align-items: center;
   height: 120px;
-  background-color: yellow;
+  background-color: #333;
 }
+/* 하단 로고 */
+.blogo {
+  width: 200px;
+}
+/* 하단 메뉴, 주소, 저작권 */
+.center_content {
+  width: calc(100% - 500px); 
+  padding-left: 60px;
+  color: #777;
+}
+/* 하단 메뉴 */
+.bmenu {
+  display: flex;
+  height: 30px;
+
+}
+.bmenu li {
+  margin-right: 16px;
+ 
+}
+.bmenu li:not(:last-child):after {
+  content: '|';
+  margin-left: 16px;
+}
+.bmenu  a {
+  color: #c0c0c0;
+  
+}
+.fs {
+  width: 300px;
+ 
+}
+
+
