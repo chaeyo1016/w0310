@@ -49,7 +49,7 @@ flex
 serif 와 sans-serit의 차이
 se
 
-https://아이디.gi
+https://아이디.github.io/w3010/70pf/dothome/프로젝트폴더명/
 
 
 
