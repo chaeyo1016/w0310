@@ -1,0 +1,55 @@
+Q. css 선택자에 무엇이 있는가?
+
+
+
+전체
+*
+그룹
+,
+속성
+[속성]
+[속성=값]
+[속성=~값]
+[속성=*값]
+[속성=|값]
+[속성=^값]
+
+Q. css 속성에 무엇이 있는가?
+leeter-spacing 자간
+color
+
+font-weight
+font-height
+font-style 
+font-size
+font-family
+font
+
+
+
+
+
+
+
+
+display(가로배치)
+justify-content
+align-items
+
+flex-direction
+flex-flow
+flex-flowflex-grow
+flex-shrink
+flex-basis
+order
+flex
+
+
+
+serif 와 sans-serit의 차이
+se
+
+https://아이디.gi
+
+
+
