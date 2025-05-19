@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .box {
+            position: relative;
+            width: 650px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            margin: 0;
+            font-weight: bold;
+            width: 250px;
+            height: 100px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .red {
+            background: crimson;
+        }
+
+        .green {
+            background: lime;
+            position: absolute;
+            left: 70px;
+            top: 50px;
+            z-index: 1;
+        }
+
+        .blue {
+            position: relative;
+            background: dodgerblue;
+            left: 100px; /* l100 */
+            top: 40px; /* t40 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p class="red">Lorem ipsum</p>
+        <p class="green">Lorem ipsum</p>
+        <p class="blue">Lorem ipsum</p>
+    </div>
+</body>
+
+</html>

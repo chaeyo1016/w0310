@@ -78,10 +78,37 @@ nav a:hover {
 .slide {
     height: 400px;
 }
+/* 바로가기 링크 */
+.link {
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 120px;
+    height: 340px;
+    background:#B79359;
+    text-align: center;
+}
+.link li {
+    margin-top: 16px;
+}
+.link span {
+    display: block;
+    
+}
 /* 배너 */
 .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
     height: 200px;
-    background: darkmagenta;
+    background: #C5C7C4;
+}
+.banner .cont {
+    display: flex;
+}
+.banner .cont img {
+    margin-right: 34px;
 }
 /* 공지사항 및 갤러리 */
 .tabs {
