@@ -7,14 +7,11 @@
     padding: 0;
 }
 body {
-    margin: 0;
     font: 15px/1.6 "돋움", sans-serif;
     background: #fff;
     color:#333;
 }
 ul {
-    margin: 0;
-    padding: 0;
     list-style:none;
     /* margin-top: 1em;
     margin-bottom: 1em;
@@ -61,7 +58,7 @@ nav a:hover {
 }
 .spotmenu a:not(:last-child):after{
     content: ' |';
-    margin: 0 8px;
+    margin: 8px;
 
 }
 .spotmenu a:hover {
@@ -72,7 +69,7 @@ nav a:hover {
 /* 오른쪽 영역 */
 .container {
     width: calc(100% - 200px);
-    background: darkgoldenrod;
+    background: #9c9999;
 }
 /* 슬라이드 이미지 */
 .slide {
@@ -100,9 +97,10 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 0 35px;
     height: 200px;
-    background: #C5C7C4;
+    background: #741800;
+    color: #fff;
 }
 .banner .cont {
     display: flex;
@@ -113,7 +111,20 @@ nav a:hover {
 /* 공지사항 및 갤러리 */
 .tabs {
     height: 250px;
-    background: darkolivegreen;
+   padding: 30px  35px;
+   line-height: 2; 
+}
+
+ .tabs a {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 0 16px;
+   
+}
+.tabs a:hover {
+    background: #A82D04;
+    color:#ccc;
 }
 
 
@@ -139,7 +150,7 @@ footer {
 }
 .bmenu li:not(:last-child):after {
     content: '|';
-    margin: 0 8px;
+    margin: 8px;
 }
  
 /* 주소 및 저작권 */
