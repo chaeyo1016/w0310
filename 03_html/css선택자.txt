@@ -33,6 +33,7 @@ font
 
 
 
+
 display(가로배치)
 justify-content
 align-items
@@ -53,4 +54,27 @@ se
 https://아이디.github.io/w3010/70pf/dothome/프로젝트폴더명/
 
 
+
+로그인, 검색, 회원가입
+form
+input
+button
+section
+select
+textarea
+label
+
+tabel
+tr
+td
+th
+
+미디어
+img
+video
+audio 배경음악, 버튼효과
+iframe 유트브, 비메오 ,네이버
+source
+
+그룹핑
 

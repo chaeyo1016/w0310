@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타벅스</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: boreder-box;
+        }
+        body {
+            font: 15/1.6 "Noto Sans kR, sans-serif;"
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        header {background: lightpink;}
+        .sec { height: 800px;}      
+        .s1 {background: darkcyan;}
+        .s2 {background: darkgoldenrod;}
+        .s3 {background: darkgray;}
+        .s4 {background: darkkhaki;}
+        footer {background: #333;}
+        /* 섹션3 */
+        .s3 {
+            display: flex;
+            /* flex-derection: row;
+            주축: justify-content
+            교차축: align-items
+            flex-direction: column;
+            주축: align-items
+            교차축: justify-content */
+            justify-content: center;
+            align-items: center fixed;
+            background:  url(./images/bg.png) no-repeat 50% 50%/cover;
+        }
+        .s3 .txt {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;/* aife */
+            margin-right: 90px;
+        }
+        /* 설명글 */
+        .s3 .txt .description {
+            margin: 48px 0 36px;
+        }
+        /* 고스트 버튼 */
+        .s3 .txt a {
+            width: 126px;
+            height: 38px;
+            line-height: 2;
+            border-radius: 3px;
+            border: 2px sloid #fff;
+            text-align: center;
+            color:#fff;
+            transition: .5s;
+        }
+        .s3 .txt a:hover {
+            color:#333;
+            text-decoration: underline;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>헤더</h2>
+    </header>
+    <section class="sec s1">
+        <h2>첫 번째 섹션</h2>
+    </section>
+    <section class="sec s2">
+        <h2>두 번째 섹션</h2>
+    </section>
+    <section class="sec s3">
+        <!-- 제목과 설명 -->
+        <div class="txt">
+            <h2><img src="./images/title.png" alt="제목"></h2>
+            <p><img src="./images/description.png" alt="설명"></p>
+            <!-- ghost 버튼 -->
+             <a href="#">자세히 보기</a>
+        </div>
+        <!-- 이미지 콘텐츠 -->
+        <div class="cont">
+            <img src="./images/contents.png" alt="콘텐츠">
+        </div>
+    </section>
+    <seciton class="sec s4">
+        <h2>네 번째 섹션</h2>
+    </seciton>
+    <footer>푸터</footer>
+    </body>
+</html>

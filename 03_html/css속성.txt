@@ -1,0 +1,141 @@
+
+p121 (총94개)
+font-family:'돋움', Dotum, Arial, Helvetica, sans-serif;
+font-size: 12px or 150% or 1.5em or 1.5rem
+font-weight
+font-style
+font-variant
+line-height: 1.4;->부모 요소의 글자 크기 기준
+font: weight|style|variant size/line-height family: -> 순서있다.
+@font-face {font-family:이름; src:url(폰트);}->눈누, 구글,네이버
+color: rgba(R, G, B,alpha); -> alpha는 0~1
+letter-sapcing (ex)  레   터  스  페  이  싱
+word-spacing          레터      스페이싱
+text-decoration: none; underline(밑줄)
+text-transform
+text-shadow: x위치 y위치 블러 색(blur color);
+text-align->블록레벨 요소(display:inline; 이 아닌 요소의)
+**블록레벨 요소에 적용하여 인라인 요소를 수평맞춤**
+vartical-align->인라인 요소의 수직맞춤
+text-indent->
+word-wrap
+word-break: break-all; -> text-align:justify(양쪽맞춤), 영문자
+**선택적인 쓰임**
+white-space: wowrap;(줄바꿈안한다)
+text-overflow: ellipsis; -> 말줄임....
+display: block|inline|inlin-block|none|flex;
+visibility
+overflow: hidden;
+opacity(불투명)
+background
+background-color
+backgroud-repeat
+backgroud-position
+backgroud-attachment
+backgroud-size
+backgroud-origin
+backgroud-image
+backgroud-clip
+(박스모델)
+width
+max-width
+min-width
+height
+min-height
+max-height
+padding:패딩;(안쪽);
+padding-top
+padding-bottom
+padding-left
+padding-right
+
+margin: 여백(바깥);
+margin:여백(바깥); 음수0
+margin-top
+margin-bottom
+margin-left
+margin-right
+margin-
+
+border: 1px (두께),slide(종류),색
+width(두께), style(종류) color(색);->순서없다
+border-top
+border-bottom
+border-right
+border-lefe
+border-width
+border-style
+border-color
+border-radius
+border-top-left-radius
+border-top-right-radius
+border-bottom-left-radius
+border-bottom-right-radius
+border-image
+outline: 1px soild red;(개별속성)
+box-sizing:border-box;
+*box-shadow:x위치 y위치 blur spread(펼쳐지다) color [inset]; -> 순서있다*
+resize:none;(사이즈조절못함)
+appearance
+transform: 변형;
+transform: rotate;(ex:적용시)
+*값*
+확대(scale)
+회전(rotate)
+기울기(skew)
+대칭 
+이동(translate)
+
+*transition:전환;(지속시간)
+transition-property
+transition-duration
+transition-timing-function
+transition-delay
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count: infinite;
+animation-direction
+animation-fill-mode: backwords;
+animation-play-state;*
+
+@keyframes 이름 {}
+column-count
+column-gap
+column-rule
+column-spac
+column-width
+float:left|right;
+clear:left|right*|both*;
+
+*position*
+left
+right
+top
+bottom
+z-icdex
+@media
+@import url(파일명);
+
+*flex
+flex-direction
+flex-wrap
+flew-flow
+justify-content: space-between;
+align-items: center;
+align-content
+align-self
+flex-grow
+flex-shrink
+flex-basis
+order*
+
+
+grid-template-columns
+grid-template-rows
+grid-column-start
+grid-column-end
+grid-row-start
+grid-row-end
+
