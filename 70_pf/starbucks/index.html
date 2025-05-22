@@ -29,13 +29,19 @@
             display: flex;
             /* flex-derection: row;
             주축: justify-content
+                   flex-start
+                   flex-end
+                   center
             교차축: align-items
+                    flex-start
+                    flex-end
+                    center
             flex-direction: column;
             주축: align-items
             교차축: justify-content */
             justify-content: center;
-            align-items: center fixed;
-            background:  url(./images/bg.png) no-repeat 50% 50%/cover;
+            align-items: center;
+            background:  url(./images/bg.png) no-repeat 50% 50%/cover fixed;
         }
         .s3 .txt {
             display: flex;
@@ -57,6 +63,7 @@
             text-align: center;
             color:#fff;
             transition: .5s;
+            margin-right: 8px;
         }
         .s3 .txt a:hover {
             color:#333;
@@ -93,4 +100,5 @@
     </seciton>
     <footer>푸터</footer>
     </body>
+
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxmodel</title>
+    <style>
+        /* 
+        width
+        min-width
+        max-width
+        height
+        min-height
+        max-height
+        margin
+        padding
+        border
+        */
+
+        * {
+            outline: 1px solid lime;
+        }
+        p {
+            background: rgba(236, 126, 126 ,.5);
+            /* width: 600px;
+            height: 300px; */
+            /* width: 600px; */
+            /* 최소 가로크기가 500px -> 500px보다 작아지지 않는다.  */
+            min-width: 800px;
+            /* min-height: 100px; */
+            border: 20px solid rgba(157, 236, 126, 0.5);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- width: auto; (기본값) 100% -->
+     <!-- 부모크기에 따라서 100%임을 설명 -->
+    <h1>boxmodel</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, porro ut. Quis, quod deserunt libero tempore officiis facere nisi voluptate!</p>
+</body>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis rem natus officiis quia eveniet inventore dolor excepturi non maxime. Ex, beatae? Et soluta perferendis magni cumque consectetur dolorum sit dolor!</p>
+</html>
