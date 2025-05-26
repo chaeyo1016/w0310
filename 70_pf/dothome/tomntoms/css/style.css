@@ -24,14 +24,21 @@ img {
 /* a영역:헤더*/
 
 header {
+  height: 100px;
+}
+header.inner {
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+
 }
 nav {
+  align-self: flex-end;
   width: 600px;
   height: 60px;
+  line-height: 60px;
 }
 nav li {
   display: inline-block;
@@ -102,10 +109,54 @@ height: 25%;
 }
 .link {
     width: 400px;
+    padding: 10px 20px;
+}
+.link img {
+
+  height: 180px;
 }
 
 
 /* d영역: 푸터 */
+
 footer {
-    height: 100px;
+  height: 100px;
+  background: #333;
+  color: #777;
+ 
+}
+footer.inner {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+
+}
+
+.left {
+  width: 1000px;
+  padding-top: 12px;
+}
+.right {
+  width: 200px;
+}
+.sns {
+  height: 50px;
+  padding-top: 20px;
+  /* font-size: 24px; */
+}
+.sns a {
+  color: #777;
+}
+.sns a:hover {
+  color:#fff;
+}
+
+
+footer a {
+  color: #777;
+}
+.fs {
+  padding-top: 24px;
 }
