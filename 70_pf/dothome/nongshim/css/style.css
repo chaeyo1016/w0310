@@ -75,6 +75,48 @@ nav a:hover {
 .slide {
     height: 400px;
 }
+* {margin: 0; padding: 0; box-sizing: border-box;}
+/* 슬라이드 */
+.slide {
+position: relative;/* posr */
+}
+.slide img {
+width: 100%;
+height: 400px;
+object-fit: cover;
+}
+.slide li {
+width: 100%;
+position: absolute;/* posa */
+animation: /* fade1 */ 6s infinite;
+}
+.slide li:nth-of-type(1) {animation-name: fade1;}
+.slide li:nth-of-type(2) {animation-name: fade2; opacity: 0; }
+.slide li:nth-of-type(3) {animation-name: fade3; opacity: 0; }
+@keyframes fade1 {
+0% {opacity: 0;}
+10% {opacity: 1;}
+33% {opacity: 1;}
+43% {opacity: 0;}
+100% {opacity: 0;}
+}
+@keyframes fade2 {
+0% {opacity: 0;}
+33% {opacity: 0;}
+43% {opacity: 1;}
+66% {opacity: 1;}
+76% {opacity: 0;}
+100% {opacity: 0;}
+}
+@keyframes fade3 {
+0% {opacity: 1;}
+43% {opacity: 0;}
+66% {opacity: 0;}
+76% {opacity: 1;}
+100% {opacity: 1;}
+}
+
+
 /* 바로가기 링크 */
 .link {
     position: absolute;
