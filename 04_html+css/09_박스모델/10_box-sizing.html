@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background: orange;
+            margin: 10px;
+            padding: 20px;
+            width: 199px;
+            height: 132px;
+        }
+        .none {
+            padding: 0;
+            border: none;
+        }
+        .div1 {
+            /* 가로=199 + 16*2 + 1*2 ->199+32+2->233 */
+            /* 세로=132 + 16*2 + 1*2 ->132+32+2->166 */
+            /* 바깥쪽으로 padding적용! */
+            box-sizing: content-box;
+        }
+        .div2 {
+            /* 안쪽으로 padding적용! */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="none">content-box</div>
+    <div class="div1">content-box(기본값)</div>
+    <div class="div2">border-box</div>
+</body>
+</html>
