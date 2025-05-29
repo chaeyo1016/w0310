@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Navigation Bar(글로벌 내비게이션바)</title>
+    
     <style>
         /* 공통 */
         * {
@@ -13,15 +14,27 @@
 
         }
         ul {
-            list-style: none;
+             list-style: none;
         }
         body {
-            font: 15px/1.6 '돋음',sans-serif;
+            font: 15px/1.6 '돋음', sans-serif;
             color: #333;
         }
         a {
             text-decoration: none;
             color: #333;
+        }
+        /* header */
+        header {
+            position: relative;
+            /* display: flex; */
+            /* justify-content: flex-end;
+            align-items: center; */
+            width: 1320px;
+            height: 100px;
+            margin: 0 auto;
+            background: orange;
+            /* background: yellow; */
         }
         /* 메인 */
         .gnb .main>li>a {
@@ -33,6 +46,54 @@
         .gng .sub a {
             font-size: 14px;
         }
+         .gnb {
+            position: absolute;
+            right: 0;
+            top: 35px;
+           
+         }
+        /* 1depth: 메인 메뉴 */
+        .main {
+            display: flex;
+        }
+        .main >li>a {
+            display: block;
+            width: 160px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+
+        }
+        .main>li>:hover {
+        background: #1b3b86;
+        color: #fdfdfd;
+        }
+        .main>li:hover .sub {
+            height: 150px;
+        }
+        /* 2depth: 서브메뉴 */
+        .sub {
+            
+            height: 0px;
+            overflow:hidden;
+            text-align: center;
+            transition: .3s;
+            background: rgb(173, 224, 224);
+        }
+        .sub::before {
+            display: block;
+            content: '';
+            height: 10px;
+        }
+        .sub li a {
+            padding: 4px 8px;
+        }
+        .sub li a:hover {
+            background: #111;
+            color:#fdfdfd;
+        }
+               
+
         /* GNB */
 
     </style>
@@ -55,6 +116,13 @@
                         <li><a href="#"> 학사 안내</a></li>
                         <li><a href="#"> 행정 지원 안내</a></li>
                         <li><a href="#"> 기관/단체</a></li>
+                    </ul>
+                <li><a href="#"> 입학/교육</a>
+                    <ul class="sub">
+                        <li><a href="#">학술정보</a></li>
+                        <li><a href="#">입학총괄</a></li>
+                        <li><a href="#">인재개발</a></li>
+                        <li><a href="#">글로벌교육</a></li>
                     </ul>
                 </li>
                 <li><a href="#">연구/산학/창업</a>
