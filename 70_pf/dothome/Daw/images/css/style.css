@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    letter-spacing: none;
+}
+body {
+    font: 15px/1.6 '돋음' , sans-serif
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* haeder */
+header {
+    background: #fdfdfd;
+    height: 100px;
+
+}
+/* logo */
+.logo {
+    height: 200px;
+    width: 40px;
+    background: darkorchid;
+}
+/* navation */
+.gnb {
+    width: 640px;
+    height: 30px;
+    background: darkolivegreen;
+}
+/* slide */
+.slide {
+    background: yellow;
+    height: 300px;
+}
+/* content */
+.contents {
+    background: darkcyan;
+    height: 200px;
+}
+/* footer */
+footer {
+    background: #555;
+    height: 100px;
+}

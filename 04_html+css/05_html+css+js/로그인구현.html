@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>메인 페이지</h1>
+    <label for="pw">비밀번호:</label>
+    <input type="password" id="pw">
+    <button type="submit" id="login_btn">로그인</button>
+<script>
+    // 선언문
+    var pw = document.getElementById('pw');
+    var login_btn = document.getElementById('login_btn');
+    var isPassswordincorrect = '잘못 입력했습니다. 다시 한번 입력해 주세요.';
+    // 로그인 버튼을 클릭하면 함수가 실행된다.
+    login_btn.onclick = loginFn;
+    
+    // 함수선언
+    function loginfn(){
+    // 제어문
+    if (pw === '1234') {
+            location.href = 'https://naver.com';
+            // pw.value가 '1234'가 아니면
+        } else {
+            // 경고창
+            alert(isPasswordincorrect);
+        }
+    }
+    // 함수호출
+    loginFn();
+
+    
+        
+        // 입력 상자를 초기화
+        pw.value = '';
+       
+       
+
+
+    
+</script>
+</body>
+</html>

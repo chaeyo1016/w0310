@@ -1,0 +1,141 @@
+@charset "utf-8";
+/*  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+body {
+    font: 15px/1.6 '돋음' , sans-serif;
+    background: #fff;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* haeder */
+header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fdfdfd;
+    height: 100px;
+
+}
+/* logo */
+.logo {
+   
+    width: 200px;
+    height: 40px;
+    background: darkorchid;
+}
+/* navigation */
+.gnb {
+    position: absolute;
+    right: 0;
+    width: 640px;
+    height: 30px;
+    background: darkolivegreen;
+}
+.gnb .main {
+    display: flex;
+}
+.gnb .main>li>a {
+    display: block;
+    width: 160px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background:#999;
+}
+.gnb .main>li>a:hover {
+    background: #1a4875;
+    color:#fff;
+
+}
+.gnb .main>li>a:hover .sub {
+    height: 150px;
+}
+/* 2depth:서브메뉴 */
+.gnb .sub {
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+    background: yellow;
+}
+.gnb .sub>li>a {
+    font-size: 14px;
+}
+/* slide */
+.slide {
+    /* background: yellow; */
+    height: 300px;
+    overflow: hidden;
+}
+.slide ul {
+    position: relative;
+    height: 400px;
+    animation: slide 8s infinite;
+}
+@keyframes slide {
+    0% {top: 0;}
+    10% {top: -100%;}
+    33% {top: -100%;}
+    43% {top: -200%;}
+    66% {top: -200%;}
+    76% {top: -300%;}
+    99.99% {top: -300%;}
+    100% {top: 0:}
+}
+/* content */
+.contents {
+    display: flex;
+    background: darkcyan;
+    height: 200px;
+}
+/* tap */
+.tabs {
+    width: 400px;
+    background: darkgray;
+}
+/* 배너 */
+.banner {
+    width: 400px;
+    background: darkkhaki;
+}
+.link {
+    width: 400px;
+    background: darkolivegreen;
+}
+
+/* footer */
+footer {
+    display: flex;
+    background: #555;
+    height: 100px;
+}
+.blogo {
+    width: 200px;
+    background: lightcyan;;
+}
+.copy {
+    width: 800px;
+    background: lightgreen;
+}
+.sns {
+    width: 200px;
+    background: lightsalmon;
+}
+    
