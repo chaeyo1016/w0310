@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* 공통 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body {
+    font: 15px/1.6 '돋움', sans-serif;
+    color:#333;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+/* 전체 */
+.wrap {
+    display: flex;
+    width: 1000px;
+}
+/* 헤더 */
+header {
+    width: 200px;
+    height: 650px;
+    background: #dddd;
+}
+
+.container {
+    width: 800px;
+}
+/* 슬라이드 */
+.slide {
+    height: 350px;
+    background: plum;
+
+}
+/* 콘텐츠 */
+
+.contents {
+    display: flex;
+    height: 200px;
+    background: lightgoldenrodyellow;
+}
+/* 탭 */
+.tabs {
+    width: 400px;
+    background: lightgrey;
+}
+/* 공지사항 */
+/* 갤러리 */
+/* 배너 */
+.banner {
+    width: 200px;
+    background: coral;
+}
+/* 바로가기 */
+.link {
+    width: 200px;
+    background: aquamarine;
+}
+/* 푸터 */
+footer {
+    display: flex;
+    height: 100px;
+    background: #999;
+}
+/* 하단로고 */
+.blogo {
+    width: 200px;
+    background: darkred;
+}
+.right {
+    width: 800px;
+
+}
+/* 하단메뉴 */
+.bmenu {
+    height: 50px;
+    background: khaki;
+}
+/* 주소 및 저작권 */
+.copy {
+    height: 50px;
+    background: purple;
+}
