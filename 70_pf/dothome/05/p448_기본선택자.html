@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본선택자</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           $("p").css("border", "4px solid red");
+           $("#gnb").css("border", "4px solid orange");
+           $(".logo").css("border", "4px solid yelow");
+           $("#gnb >ul>li").css("border", "4px solid green");
+           $("#gnb >ul>").css("border", "4px solid blue");
+           $("#visual + #content").css("border", "4px solid navy");
+           $("#visual ~ #footer").css("border", "4px solid purple");
+           $("div.util").css("border", "4px solid pink");
+           $(".left, .right, #banner").css("border", "4px solid gray");
+        });
+
+    </script>
+</head>
+<body>
+    <header id="heade">
+        <div class="logo">로고</div>
+            <div class="util">회원가입</div>
+                <nav class="gnb">
+                    <ul>
+                        <li>메뉴1
+
+                            <ul><li>메뉴1_1</li>
+                            </ul>
+                        </ul>
+                        </li>
+
+                </nav>
+                <div class="visual">
+                    <p>비주얼</p>
+
+                </div>
+                <div id="content">
+                    <div class="left">왼쪽</div>
+                        <div class="right">
+                            <div class="util">오른쪽</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+</body>
+</html>
