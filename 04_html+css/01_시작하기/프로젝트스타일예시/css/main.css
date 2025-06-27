@@ -1,9 +1,0 @@
-/* main.css */
-@charset "utf-8";
-@import url("reset.css");
-@import url("font.css");
-@import url("header.css");
-
-body {
-    background: yellow;
-}
