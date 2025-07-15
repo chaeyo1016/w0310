@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+/* 클로저
+일반적으로  */
+
+
+
+const increase = add();
+console.log(increase());
+console.log(increase());
+
+function muliply(n) {
+    return function() {
+        return n *= n;
+    }
+}
+
+const num1 = multiply(10);//const num1 = function() {reture n *= n;}
+console.log(num1());//10 * 10 -> 100
+console.log(num1());//100*100 -> 10000
+const num2 = multiply(20);
+console.log(num2());// 20 * 20 -> 400
+console.log(num2());//400 * 400 -> 160000
+ </script>   
+
+</body>
+</html>

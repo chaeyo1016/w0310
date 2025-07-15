@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드:우->좌</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+        }
+        /* 슬라이드 이미지 */
+        .slide {
+            width: 500%;
+            height: 150px;
+            overflow: hidden;
+            position: relative;
+            background: yellow;
+        }
+        .slide ul {
+            position:relative;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 400%;
+            height: 100%;
+            animation: slide 10s infinite linear;
+            background: red;
+        }
+        .slide li {
+
+            width: 25%;
+            font-size: 100px;
+        }
+        @keyframes slide {
+            0% {left: 0;}
+            10% {left: -100%;}
+            33% {left: -100%;}
+            43% {left: -200%;}
+            66% {left: -200%;}
+            76% {left: -300px;}
+            99.99% {left: -300%;}
+            100% {left: 0%;}
+        }
+           
+           
+    </style>
+   
+</head>
+<body>
+    <div class="slide">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>1</li>
+        </ul>
+    </div>
+</body>
+</html>

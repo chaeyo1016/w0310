@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        /* 
+        반복문
+        for ~in
+        for ~or
+        형식:
+        for(let val of iterable) {
+        }
+        for(let val of iterable) {
+        }
+        for
+
+        메서드 //sort()  console.log(info.toString().split(','));
+        // */
+
+
+
+
+        const city = ['서울', '대구', '대전', '부산'];
+        for (let idx in city) {
+            console.log(idx);
+            console.log(city[idx]);
+        }
+        for (let val of city) {
+            console.log(val);
+        }
+
+        const person = {
+            name: '홍길동',
+            age: 20,
+            isBig: false,
+            printOut: function () {
+                console.log(`나는 ${this.name}입니다.`);
+            }
+        };
+     //  --------------------------------------------------
+       
+        const base = [10,20,30];
+        base.map(function (value,index,array){
+            console.log(vallue);
+            console.log(index);
+            console.log(array);
+
+        });
+        console.log(`=== map2 ===`);
+        let area = base.map(function(value, index){
+            return index * 4 ;
+        });
+        console.log(area);
+        
+        console.log(`=== forEach2 ====`);
+        area = base.forEach(function (value){
+            return value * 8;
+
+        });
+        console.log(area);
+        /* 
+        filter()
+        조건에 맞는 배열 요소들만 새로운 배열로 만들어준다. */
+
+        console.log(`==== filter ====`);
+        const data = [javascript , 20, 30, 'jquery'];
+        data.filter(function (value, index,array){
+            console.log(value);
+            console.log(index);
+            console.log(array);
+        });
+
+console.log(`==== filter2 ====`);
+        const num = data.filter(function(value) {
+            // data의 배열 값 중 number 테이터만 num변수의 배열로 만들어준다.
+            return typeof value ==='number';
+        });
+        console.log(num);//(2) [20,30]
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

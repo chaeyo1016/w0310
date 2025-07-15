@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤이미지</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>랜덤이미지 생성기</h1>
+    <button id="btn">이미지보기</button><br><br>
+    <img id="randomImg" src="https://picsum.photos/200/300" alt="랜덤이미지">
+    <script>
+        const btn = $('#btn');
+        const randomImg = $('#randomIng');
+
+        const imgs = [
+           ' https://picsum.photos/id/337/200/300',
+           ' https://picsum.photos/id/338/200/300',
+           ' https://picsum.photos/id/339/200/300',
+           ' https://picsum.photos/id/340/200/300',
+           ' https://picsum.photos/id/341/200/300'
+         
+
+    ];
+    btn.click
+
+        function showRandomImage(){
+            const randomIndex = Math.floor(Math.random() * imgs.length);
+            console.log('랜덤번호' + randomIndex);
+            const selectedImg = imgs[randomIndex];
+            randomImg.arrr('src', selectedImg);
+        }
+      
+
+        function generateLotto() {
+            const numbers = [];
+            while (numbers.length < 6) {
+                const num = Math.floor(Math.random() * 45) + 1;
+                // 중복되지 않게 includes()로 체크
+                // numbers배열에 num이 포함되어 있지 않으면 true,포함되어 있으면 false
+                if (!numbers.includes(num)) {
+                    numbers.push(num);
+                }
+
+            }
+            // 6개가 모이면 sort()로 오름차순 정렬
+            const sortNum = mumbers.sort((a, b) => a - b);
+            result.text('당첨 번호는' + sorttNum + '입니다');
+        }
+
+        const btn = $
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

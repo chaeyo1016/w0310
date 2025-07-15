@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      
+        
+        /* 선형 gradient 기본형
+        background: linear-gradient([방향], 색1,색2
+        - 방향: to top ->위로
+        * to left -> 왼쪽으로
+        to right -> 오른쪽으로
+        to bottom (기본값) -> 아래로 
+        - x방향: left, right
+        - y방향: top, bottom
+        - 각도: 숫자deg
+        
+        */
+        
+        div {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(red, yellow);
+            w
+        }
+        .linear1 {
+            background: linear-gradient(red,yellow);
+        }
+        .linear2 {
+            /* 10이하: red
+            10~20%사이: red -> yellow
+            20%~100%:yellow */
+            background: linear-gradient  (red 10%, yellow 20%);
+        }
+         .linear1 {
+            background: linear-gradient(red,yellow);
+         }       
+    </style>
+</head>
+<body>
+   <div class="linear1"></div>
+   <div class="linear2"></div>
+   <div class="linear3"></div>
+   <div class="linear4"></div>
+    
+</body>
+</html>

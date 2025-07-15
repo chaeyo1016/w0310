@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for..in</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        /* 
+        제어문
+        1.조건문: if~else, switch~case
+        2.반복문: while, do~while, for, for~in , for~of
+        3. 기타: break, continue
+
+        
+        */
+
+        const info = {
+            name:'홍길동',
+            age: 20,
+            subject: 'javascript',
+            credit: 3
+        };
+//i는 info객체의 속성이다
+//info[i]는 info 객체의 속성 값이다.
+        for (let i in info) {
+            console.log(i + ':' + info[i]);//subject: javascript credit: 3
+        }
+
+        const info1 = {
+            name: 'javascript',
+            credit: 3,
+            days: 20,
+            tuition: 10000
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문:while</title>
+   
+</head>
+<body>
+    <h1>반복문</h1>
+    <div id="sum">while</div>
+    
+    <script>
+   
+/* 
+
+반복문
+1. while
+2. do~while
+3. for
+
+// 조건이 만족하는 동안, 실행문을 실행한다
+// 초기값;
+// while (조건) {
+// 실행문;
+// 증감문;
+// 
+// */
+
+let n = 1;
+let sum = 0;
+while (n < 8) {
+    // sum = 1
+    sum += n;//0 -> 1
+    // n = n + 1;
+    n++;//1 -> 2
+}
+console.log(sum);
+// 제이쿼리 스크립트
+$('#sum1').text('n = ${n}', 'sum = ${sum}');
+// 바닐라 스크립트
+document.getElementById('sum').textContent = `n = ${n}, sum = ${sum}`;
+console.log(`n = ${n},sum = ${sum}`);
+
+/* 
+while(false) {
+코드;} */
+let n2 = 1;
+let sum2 = 0;
+do {
+    sum2 += n2;
+    n2++;
+} while (n2 < 8);
+console.log('sum2 ='+ sum2);
+
+
+/* while 형식
+초기값;
+while (조건식) {
+코드;
+증감식;
+}
+for 형식
+for (①초기값; ②조건식; ④증감식) {
+③코드;
+} 
+-조건식이 true이면 {③코드}실행
+-④증감식 실행후 ②조건식 비교
+-②->③->④를 조건식이 true이면 반복 수행
+-조건식이 false이면 for를 빠져나온다.
+
+
+*/
+//전역(goble)변수: sum3; , i
+let sum3 = 0;
+let  i = 1; 
+while (i <= 10) {
+    sum3 += i;
+    i++;
+}
+console.log(sum3);//45
+
+//몇 번 반복? (반복 횟수가 정해져 있을때)
+// for~in , for~of
+let sum4 = 0;
+// 변수의 scope(스코프)- 변수가 영향을 미치는 범위
+// i는 지역변수(local)
+for (let i = 1; i < 10; i++) {
+sum4 += i;
+}
+console.log(sum4);//45
+
+// 구구단
+let gugudan = '<gugudan';
+// i는 2,3,4,....,9으로 8번 반복 -> 단 수 변경
+for (let i =2; i <= 9; i++) {
+    // j는 1부터 9까지 9번 반복
+    for (let j = i - 1; j <= 9; j++) {
+        gugudan += `${i}x${j}=${i * j}<br>`;
+    }
+    gugudan += '<br>';
+}
+document.write(gugudan);
+
+// 3의 배수
+let multiple = '3의 배수는';
+for (let i=1; i<=20; i++) {
+    if (i % 3 ===0) {
+        multiple += i + '';
+    }
+}
+console.log(multiple);
+
+
+
+
+const table = '<table>'
+    // i는 2,3으로 두번 반복 -> <tr> 두개 -> 행이 2개
+    for (let i=2;i<=3;i++){
+        table+='<tr>';
+            // j는 1부터 9까지 9번 반복 -> <td>가 9개 -> 셀이 9개
+            for(let j=i; j<=9;j++) {
+                table+='<td>'+i+'*'+j+'='+i*j+'</td>';
+            }
+            table+='</tr>';
+    }
+    table +='</table>';
+    docunent.write(table);
+
+    
+
+
+    </script>
+</body>
+</html>

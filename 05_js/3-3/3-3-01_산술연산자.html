@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산술연산자</title>
+</head>
+<body>
+    <script>
+        /* 
+        산술 연산자의 종류
+        + -> 숫자는  */
+
+
+
+
+
+
+let subject = 'css';
+let score = 100;
+// 숫자 데이터가 아닌 경우 +는 연결 연산자
+// 문자열 + 문자열 -> 문자열
+// 숫자 + 문자열 -> 문자열
+// 숫자 + 숫자 + 숫자 + 문자열 -> 문자열
+// 숫자 + 숫자 + 숫자 (덧셈)
+console.log(subject + '과목 성적은 ' + score);/* css과목 성적은 100 */
+
+// ES6버전 이후
+// +대신 탬플릿 문자열을 사용한다.
+// `탬플릿 ${변수}문자열`
+// '문자열'
+// 백틱/백쿼드(`)
+// 형식:${변수}
+console.log(`${subject}과목 성적은 ${score}`);
+
+// %(나머지) 연산자
+// let dividend = prompt("숫자를 입력하면 3의 배수인지 알려줘요~",'');
+let dividend = 4;
+let remainder = dividend % 3;
+console.log(remainder);
+let comment;
+if (remainder === 0) {
+    comment = '3의 배수';
+} else {
+    comment = '3의 배수가 아닙니다.';
+}
+document.write(comment);
+
+// ++, --
+//  ++는 1씩 증가
+//  --는 1씩 감소
+let score2 = 10;
+// 
+console.log(score2);/*10  */
+// ++,--연산자는 변수의 앞 또는 뒤에 붙여 사용할 수 있다
+// 증가감 연산자가 변수와 단독으로 사용할 때
+//  -> 변수의 앞쪽이나 뒤쪽에서 붙여도 상관없다
+//  -> 전위 연산(++변수)과 후위 연산(변수++)이 같은 결과이다.
+++score2;/* 11 */
+score2++;
+console.log(score2);/* 12 */
+console.log(++score2);/* 12 */
+score2++;/* 13 */
+console.log(score2++);/* 13 */
+console.log(score2);/* 14 */
+
+// = 연산자와 같이 사용이 되면 결과 값에 영향을 준다
+//  ->전치 연산과 후치 연산 결과가 차이가 생긴다
+let score3 = 10;
+// 1증가후 대입
+let result = ++score3;
+console.log(`${result}, ${score3}`);/* 11,11 */
+let score4 = 10;
+// 대입 후 1증가
+let result3 = score4++;
+console.log(`${result2} ,${ score4}`);
+
+// +, -, *,/
+let num1 = 20;
+let num2 = 20;
+let score10 = num1 + num2;
+let score20 = num1 - num2;
+let score30 = num1 * num2;
+let score40 = num1 / num2;
+console.log(`${score10},${score20},${score30},${score40}`);
+
+// %
+let evenOdd = 2;
+let result2 = evenOdd % 2;
+let comment2;
+if (result2 === 0) {
+    comment2 = `${evenOdd}는(은)"짝수"입니다.`;
+} else {
+    comment2 = `${evenOdd}는(은)"홀수"입니다.`;
+    
+}
+console.log(comment2);
+
+
+
+
+
+    </script>
+</body>
+</html>

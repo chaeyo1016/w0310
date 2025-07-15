@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내부스크립트</title>
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+</head>
+
+<body>
+    
+    <button onmouseover="console.log('over ok');">mouseover</button>
+    <button onmouseout="console.log('out ok');">mouseout</button>
+
+
+   
+    표준 이벤트 모델
+    객체.accEventListener('이벤트', 함수);
+
+    
+    <script>
+        const bt = document.getElementById("bt");
+
+        //기본 이벤트 모델
+        //bt.onclick=function(){
+        //console.log('ok');
+    };
+
+        bt.addEventListener('click', function(){
+            console.log('ok');
+        });
+        //표준 이벤트 모델
+        //->겍체에 동일한 이벤트가 여러번 적용할 수 있다.
+        function win1(){}
+
+     
+
+    </script>
+    
+
+</body>
+
+</html>

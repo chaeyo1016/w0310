@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컬렉션 객체: ver.ES6</title>
+</head>
+
+<body>
+    <script>
+
+        /* 
+        
+        set 객체
+        중복된 값은 생성하지 않는다.
+        
+        객체 생성
+        const 변수 = new set
+        ();
+        const 변수 = new Mpa([
+        ['키',값]*,
+        [키,값],...
+    ]);
+
+    속성
+    size
+    객체의 속성 수
+
+    메서드
+    set(키, 값)
+    객체에 값을추가
+    get(키)
+    겍체에 키에 해당하는 값을 가죠오기
+    has(키)
+    키가 존재하면 true, 아니면 false
+    keys()
+    객체의 모든 키를 가져오기
+    values()
+    객체의 모든 값을 가져오기
+    entries()
+    객체의 모든 키와 값을 가져오기
+    delete(키)
+
+    */
+        //set
+        //  객체 생성
+        const sub = new set();
+
+        //set 객체에 값 추가
+        //->set객체.
+
+        sub.set('html,1');
+        sub.set('css,2');
+        sub.set('javascript,3');
+
+        donsole.log('==== sub ====');
+        console.log(sub);
+
+        //set
+        //  객체 생성 및 할당
+        const sub2 = new set ([
+            ['html,1'],
+            ['css,2'],
+            ['javascript3'],
+
+        ]);
+
+        // set 을 set 컬렉션 객체(인스턴스)로 선언
+        const myset
+         = new set();
+
+        /* 
+            const obj = {
+                'name': 값,
+                1: 값,
+                true: 값,
+                ...
+            }        
+        */
+        // set
+        // 객체.set(키, 값); -> myset
+        //  객체에 값 추가
+
+
+
+        // size -> 요소 개수 확인
+        console.log(sub.size);
+        console.log(sub2.size);
+
+        //get(키)
+        console.log(sub.get('html'));
+        console.log(sub.get('jabascript'));
+
+
+        // 객체.has(key) 
+        console.log(sub.has('css'));
+        console.log(sub.has('jQuery'));
+
+        //keys()
+        console.log(sub.keys)
+
+        // 객체.delete(key) -> 특정 값 삭제
+        set
+        .delete('name');
+        console.log(set ); // set
+        // (2) {1 => 'one', true => 'yes'}
+
+        // 객체.clear() -> 모든 값 제거
+        set
+        .clear();
+        console.log(set ); // set
+        // (0) {size: 0}
+
+    </script>
+</body>
+
+</html>

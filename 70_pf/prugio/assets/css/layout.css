@@ -1,0 +1,22 @@
+@charset "utf-8";
+#section .tit {
+    text-align: center;
+    height: 288px;
+    background: #015152;
+    padding-top: 80px;
+}
+#section .cont {
+    display: flex;
+}
+#section .left {
+    width: 50%;
+    height: 686px;
+    background: lightcyan;
+
+}
+#section .right {
+    width: 50%;
+    height: 686px;
+    background: rgb(71, 223, 223);
+
+}

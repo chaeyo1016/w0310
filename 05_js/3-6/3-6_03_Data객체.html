@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤이미지</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+   <script>
+    /* 
+    date객체
+    날짜와 시간에 대한 정보 값을 얻거나 설정한다.
+    
+    const date = new Date();
+    const date = new Date('년/월/일');
+    ex) const date = new Date('2025-07-07');
+    const date = new Date(년,월, 일,시, 분,초,밀리초);
+     
+    메서드
+    getFullYear()
+    년
+    getMonth() + 1
+    월 (0~11 -> 1~12월)
+    getDate()
+    일
+    getday()
+    요일
+    getHours()
+    시
+    getMinutes()
+    분
+    getSeconds()
+    초
+    toUTCString()
+    toLocalesString()
+    지역의 Date정보를 문자열로 반환
+
+    */
+
+    const dateObj = new Date(2025,9,30,10,30);
+    const dateInfo = {
+        year: dateObj.getFullYear(),
+        month: dateObj.getMonth() + 1,
+        date: deteObj.getDate(),
+        hours: dateObj.getHours(),
+        minutes: dateObj.getMinutes(),
+        nowDate: dateObj.toUTCString(),
+    };
+    for (let i in dateInfo) {
+        console.log(i + ':' + dateInfo[i]);
+    }
+   </script>
+
+       
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide</title>
+<!-- // bxSlider 라이브러리 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+ <!-- jQuery 라이브러리 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <!-- bxSlider 라이브러리 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+<style>
+    body {
+        background: olive;
+    }
+#sliderwarp {
+    width: 1440px;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+</style>
+  <script>
+    $(function(){
+  
+    $('.bxslider').bxSlider({
+        //자동슬라이드
+  auto: true,
+  //일시정지/샐행버튼
+//   autoControls: true,
+  stopAutoOnClick: true,
+  //중앙의 동그라미:pagination 또는 indicator
+//   pager: false,
+//멀티슬라이드의 하나의 슬라이드 크기
+//   slideWidth: 1440
+});
+      
+    });
+    </script>
+</head>
+<body>
+   
+   <div id="sliderwrap">
+       <div class="bxslider">
+                <div><img src="https://picsum.photos/id/335/1903/600" alt="이미지1"></div>
+                <div><img src="https://picsum.photos/id/337/1903/600" alt="이미지2"></div>
+                <div><img src="https://picsum.photos/id/339/1903/600" alt="이미지3"></div>
+            </div>
+   </div>
+  
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디지털시계</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>디지털 시계</h1>
+    <p id="currentDate">0000년</p>
+    <script>
+        const clock = $('#clock');
+
+        const date = new Date();
+function clock() {
+
+    clock.text(date.toLocaleString());
+}
+
+setInterval(function () {
+    digitalClock();
+}, 1000);
+
+// 한자리일때 두자리로 표시하기
+switch (week) {
+    case 0: week = '일';break;
+    case 0: week = '일';break;
+    case 0: week = '일';break;
+    case 0: week = '일';break;
+
+case 0: week = '일';break;
+
+case 0: week = '일';break;
+
+case 0: week = '일';break;
+
+case 0: week = '일';break;
+
+}
+
+hour = hour < 10 ? '0' + hour : hour;
+minute = minute < 10 ? '0' + minute : minute;
+second = second < 10 ? '0' + second : second;
+
+currentDate.text(`${year}년 ${month}월 ${day}일 ${week}요일`);
+currentTime.text(`${hour}:${minute}:${second}`);
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 매개변수의 개수가 정해지지 않은 함수</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+ <script>
+    /* 
+    매개변수의 개수가 정해지지 않은 함수
+    
+    function 함수명(매개변수1(parameter1),매개변수2....) {
+    코드;
+ }
+    
+ 함수명(값1(argument1),값2);
+ 
+ 
+ 
+ 
+ */
+// function showSubject(){
+//     console.log(arguments[0] + ',' + arguments[1]);/* html, css */
+// }
+
+// showSubject('html','css','javascritp');
+
+function showSubject(){
+   for (let i=0; i < arguments.length; i++) {
+    console.log(arguments[i]);
+   }
+}
+
+showSubject('html', 'css', 'javascript', 'jQuery');
+
+
+ </script>
+
+    
+</body>
+
+</html>

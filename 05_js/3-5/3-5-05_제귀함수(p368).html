@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+        제귀함수
+        함수 안에서 자신의 함수를 호출하는 함수
+
+        참고> 팩토리열
+        10! = 10*9*8*7*6*5*4*3*2*1
+        5! = 5*4*3*2*1
+        
+        function 함수명() {
+        코드:
+        함수명();
+        */
+
+        function factorial(n) {
+            if(n===0) {
+                console.log('호출 끝');
+            } else {
+                console.log('호출' + n);
+                factorial(n-1);
+            }
+        }
+         
+        factorial(4)
+      //  ------------------------------
+
+         function factorial(n) {
+            if(n===1) {
+                return 1;
+            } else {
+                console.log(`${n} * factorial(${n-1})`);
+                return n * factorial(n-1);
+                      }
+        }
+        console.log(factorial(5));
+
+
+
+       
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS :target Tabs</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+      }
+      body {
+        font: 15px/1.6 '돋움' , sans-serif;
+      }
+      ul {
+        list-style: none;
+      }
+        .tabs {
+            max-width: 400px;
+            position: absolute;
+            line-height:
+        }
+
+        .tab-buttons a {
+            display: inline-block;
+            padding: 0px 20px;
+            line-height:
+            background: #ccc;
+            /* border: 1px solid #aaa; */
+            text-decoration: none;
+            /* color: black; */
+            margin-right: -4px;
+        }
+
+        .tab-content {
+          position: 
+            
+            padding: 16px;
+            /* border: 1px solid #aaa; */
+            background: #f9f9f9;
+        }
+        #tab1 a {
+          display: inline-block;
+          width: 280px;
+        }
+        .tab-content:target {
+          z-index: 1;
+        }
+
+        .tab-content:target {
+            display: block;
+        }
+
+        /* 기본 탭 선택 (처음 열릴 때) */
+        .tab-content:first-of-type:not(:target)~.tab-content {
+            display: none;
+        }
+
+        .tab-content:first-of-type:target,
+        .tab-content:first-of-type:not(:target):nth-of-type(1) {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tab-buttons">
+            <a href="#tab1">공지사항</a>
+            <a href="#tab2">갤러리</a>
+           
+        </div>
+
+        <div id="tab1" class="tab-content">
+          <ul>
+            <li><a href="#">이미지</a></li>
+            <li><a href="#">이미지</a></li>
+            <li><a href="#">이미지</a></li>
+            <li><a href="#">이미지</a></li>
+          </ul>
+        </div>
+        <div id="tab2" class="tab-content">
+          <ul>
+            <li><a href="#">공지사항입니다</a><span>2025-06-02</span></li>
+            <li><a href="#">공지사항입니다</a><span>2025-06-02</span></li>
+            <li><a href="#">공지사항입니다</a><span>2025-06-02</span></li>
+            <li><a href="#">공지사항입니다</a><span>2025-06-02</span></li>
+          </ul>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

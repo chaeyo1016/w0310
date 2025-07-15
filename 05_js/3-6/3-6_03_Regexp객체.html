@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디지털시계</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    
+         <script>
+/* 
+RegExp객체
+정규표현식 객체는 정해진 문자의 패턴을 만들때 사용한다.
+//리터럴
+const reg = /javascript/;
+
+//new키워드
+const 
+
+
+정규표현식 객체 플래그
+i
+대소문자 구분 없이 정규표현시과 문자열을 비교
+q
+문자열 전체를 정규표현식과 비교
+m
+여러 행의 문자열을 정규표현식과 비교
+
+정규표현식 객체 주요 패턴
+abc 
+abc문자열을 검색한다.
+/abc/sms 'abc'
+[abc]
+a,b,c중 문자 하나를 검색한다.
+/[abc]d/는 'ad*,'bd', 'cd'
+[^abc]
+a,b,c를 제외한 문자 하나를 검색한다.
+/[^abc]d/는 'ed'm'fd', 'gd',...
+[A-z]
+알파벳 대문자를 검색한다
+[a-z]
+알파벳 소문자를 검색한다.
+[0-9]
+0~9까지의 숫자를 검색한다.
+.
+하나의 문자를 검색한다.
+만약 '마침표'문자 그대로의 의미를 사용할 경우 ''
+
+?
+?앞의 문자가 0번 또는 1번 의미한다.
+/a?b/ -> b,ab
+{}
+/|\d{3/ -> 숫자 3개
+/\d{3,5}/ -> 숫자 3~5개
+/\d{3,}->숫자 3개 이상
+a|b
+
+
+*/
+const hpReg = /^\d{10,11}$/;
+
+//id@도메인
+//이메일
+//chaeyo1016@gmail.com
+// + 앞의 문자가 1번이상 반복
+^                                행의 첫 문자가 일치  
+[A-Za-z0-9!#$%^&*_-]              
+
+const emailReg = /^[A-Za-z0-9!#$%^&*_-]+@[A-Za-Z0-9_-]
++(\.[A-Za-z0-9_-]+){1,2}$/;
+
+
+const hp1 = '010123456';
+const hp2 = '01012345678';
+
+const email1 = 'abc&1_23&A-BC@icox';//x
+const email2 = 'abc&1_23&A-BC@icox.com';//o
+const email3 = 'abc&1_23&A-BC@icox.co.kr';//o
+const email4 = 'abc&1_23&A-BC@icox.abc.co.kr';//x
+
+console.log(hpReg.test(hp1));//false
+console.log(hpReg.test(hp2));//true
+console.log(hpReg.test(email1));
+console.log(hpReg.test(email2));
+console.log(hpReg.test(email3));
+console.log(hpReg.test(email4));
+
+
+
+         </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

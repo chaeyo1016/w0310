@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <img src="https://picsum.photos/id/400/200/150" alt="">
+        <a href="#">400</a>
+        <a href="#">401</a>
+        <a href="#">402</a>
+
+    </div>
+    <script>
+      
+
+        const str5 = 'https://picsum.photos/id/400/200/150';
+        const img = $('img');
+        const btn = $('a');
+        const result = img.attr('src');
+        console.log(result);
+        //replace()
+        console.log(str5.replace('400', '401'));
+
+        btn.eq(0).click(function() {
+            console.log('400눌렸나?');
+            str.replace('num', '400')
+        });
+        btn.eq(1
+            
+        ).click(function(){
+            console.log('401눌렸나?');
+            str.replace('400', '401')
+        });
+        btn.eq(0).click(function(){
+            console.log('402눌렸나?');
+            str5.replace(num, '402')
+        });
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

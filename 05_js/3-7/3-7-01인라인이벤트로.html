@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내부스크립트</title>
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+</head>
+
+<body><!-- 인라인 스크립트 -->
+    <!-- 인라인 이벤트 모델 -->
+    <!-- onclick은 HTML의 이벤트 속성 -->
+    <button id="bt">클릭</button>
+    <!-- <button onclick="console.log('click ok');">클릭</button> -->
+    <button onmouseover="console.log('over ok');">mouseover</button>
+    <button onmouseout="console.log('out ok');">mouseout</button>
+
+
+    <!-- 
+    이벤트 모델
+    1.인라인
+    html 요소에 직접 이벤트를 연결하는 방식
+    2.기본
+    HTML요소를 취득한 후
+    이벤트를 객체의 메서드 형식으로 연결하는 방식
+    3.표준
+    addEventListener() 메서드를 이용하여 연결하는 방식 -->
+    <script>
+
+        /* 
+        기본 이벤트 모델 
+        HTML요소를 취득한 후
+        document.getElementById('아이디') 
+        document.querySelector('선택자')
+
+        document.getElementByClassName('클래스')
+        document.getElementByTagName('태그명')
+        document.querySelectorAll('선택자')
+        이벤트를 '객체의 메서드'형식으로 연결
+        객체.메서드 = function(){};
+        객체.메서드 = ()=>{};
+
+        제이쿼리
+        HTML요소를 취득한 후
+        $('선택자')
+        이벤틀를 '객체의 메서드' 형식으로 연결
+        객체.메서드 = function(){};
+        객체.메서드 = ()=>{};
+
+      */
+
+
+        function sum(n) {
+            alert(n);
+        }
+
+        const bt = document.getElementById('bt');
+        bt.onclick = function () {
+            console.log('ok');
+
+        }; 
+
+       
+        
+    </script>
+     <button id="bt"
+     >익명함수 클릭</button>
+     <button id="bt2">선언적 함수 클릭</button>
+
+</body>
+
+</html>
