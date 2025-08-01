@@ -27,27 +27,26 @@ footer a {
     font-family: 'Pretendard-Regular', Helvetica, sans-serif;
 }
 
+/* Parallax Scrolling Image */
 #sec1 {
     height: 100vh;
     background: url(../images/parallax1.jpg) no-repeat 50% 50%/cover fixed;
 }
-/* section common */
+#sec3 .parallax_bg {
+    height: 400px;
+    background: url(../images/parallax2.jpg) no-repeat 50% 50%/cover fixed;
+}
 
+/* section common */
 .sec {
     max-width: 920px;
 }
 
-/* basic profile */
-#my_pic {
-    width: 316px;
-    height: 213px;
-}
-
+/* skill progressbar */
 #skill p {
     letter-spacing: 4px;
-
 }
 .progress {
-    height: 35px;
-    padding: 8px;
+    height:35px;
 }
+
