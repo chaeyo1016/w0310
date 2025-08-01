@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<div>
     <!-- header -->
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
@@ -43,21 +43,77 @@
         </div>
     </nav>
     <!-- section1: First Parallax Image with Logo Text -->
-    <div id="sec1" class="container-fluid">
+    <div id="sec1" class="container-fluid ">
         <div class="row justify-content-center align-items-center h-100">
             <h1 class="text-center"><span class="bg-dark text-white fs-4 ls10 py-3 px-5">MY WEBSITE LOGO</span></h1>
         </div>
     </div>
     <!-- section2: about me -->
-    <div id="sec2" class="container">
-        <h2>ABOUT ME</h2>
-    </div>
+    <div id="sec2" class="container-fluid">
+        <div calss="container">
+            <h2>ABOUT ME</h2>
+            <em>I love photography</em>
+        </div>
+        <!-- .sec의 width:920px -->
+        <div class="container sec">
+            <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="row">
+            <b><i class="fa-solid fa-circle-user m-2"></i>chae youning park</b>
+            <div id="my_pic"><img src="images/my.jpg" alt="내 사진" class="w-100"></div>
+        </div>
+        <p class="col">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
+        <!-- skilly -->
+        <p>Im really good at:</p>
+        <div>
+            <p>Photography</p>
+            <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar text-bg-info w-50 " style="width: 50%">50%</div>
+        </div>
+            <p>Web Design</p>
+            <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        </div>
+            <p>Photoshop</p>
+            <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar text-bg-info" style="width: 70%">70%</div>
+        </div>
+            <p>Plan</p>
+            <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar text-bg-info" style="width: 80%">50%</div>
+        </div>
+        </div>
+        <!-- achcount -->
+        <div class="row text-bg-secondary p-5 txet-center">
+            <div class="col"><span class="d-block fs-4">4+</span><i class="fa-brands fa-css3"></i>personal projects completed </div>
+            <div class="col"><span  class="d-block fs-4">1+</span><i class="fa-brands fa-square-figma"></i>Temam Collaborations </div>
+            <div class="col"><span  class="d-block fs-4">20+</span><i class="fa-brands fa-java"></i>UI design for web pages </div>
+            <div class="col"><span  class="d-block fs-4">3+</span><i class="fa-brands fa-react"></i>national techical qualification </div>
+        </div>
+    </div><!-- //sec2.end -->
+
     <!-- section3: portfolio -->
-    <div id="sec3" class="container">
-        <h2>PORTFOLIO</h2>
+    <div id="sec3" class="container sec">
+        <div><h2>PORTFOLIO</h2></div>
+        <h3>MY WORK</h3>
+        <p>
+            <em>제가 최근에 작업한 Lorem Ipsum 팁입니다.</em>
+            <em>이미지를 클릭하면 더 크게 볼 수 있습니다.</em>
+        </p>
+        <div>
+            <div class="row">
+                <div class="col"><img src="images/imgs/hanatour.png" alt=""></div>
+                <div><img src="images/imgs/hyundai.png" alt=""></div>
+                <div><img src="images/imgs/nongshim.png" alt=""></div>
+                <div><img src="images/imgs/tomntoms.png" alt=""></div>
+                <div><img src="images/imgs/hanatour.png" alt=""></div>
+                <div><img src="images/imgs/hanatour.png" alt=""></div>
+                <div><img src="images/imgs/hanatour.png" alt=""></div>
+                <div><img src="images/imgs/hanatour.png" alt=""></div>
+            </div>
+        </div>
     </div>
     <!-- section4: contact us -->
-    <div id="sec4" class="container">
+    <div id="sec4" class="container sec">
         <h2>CONTACT US</h2>
     </div>
     <!-- footer -->

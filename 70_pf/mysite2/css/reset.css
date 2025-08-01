@@ -4,6 +4,12 @@ ul {
     padding: 0;
     list-style:none;
 }
+img {
+    width: 100%;
+    height: 100%;
+    /* 부모요소에 가득차게, 이미지는 비율유지 */
+    object-fit: cover;
+}
 a {
     text-decoration: none;
 }
